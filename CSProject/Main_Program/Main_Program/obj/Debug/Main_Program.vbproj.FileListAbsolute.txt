@@ -8,3 +8,13 @@ C:\Users\Coding\Documents\Code\Main_Program\Main_Program\obj\Debug\Main_Program.
 C:\Users\Coding\Documents\Code\Main_Program\Main_Program\obj\Debug\Main_Program.exe
 C:\Users\Coding\Documents\Code\Main_Program\Main_Program\obj\Debug\Main_Program.xml
 C:\Users\Coding\Documents\Code\Main_Program\Main_Program\obj\Debug\Main_Program.pdb
+C:\Users\Coding\Documents\Code\School\CSProject\Main_Program\Main_Program\bin\Debug\Main_Program.exe.config
+C:\Users\Coding\Documents\Code\School\CSProject\Main_Program\Main_Program\bin\Debug\Main_Program.exe
+C:\Users\Coding\Documents\Code\School\CSProject\Main_Program\Main_Program\bin\Debug\Main_Program.pdb
+C:\Users\Coding\Documents\Code\School\CSProject\Main_Program\Main_Program\bin\Debug\Main_Program.xml
+C:\Users\Coding\Documents\Code\School\CSProject\Main_Program\Main_Program\obj\Debug\Main_Program.vbprojAssemblyReference.cache
+C:\Users\Coding\Documents\Code\School\CSProject\Main_Program\Main_Program\obj\Debug\Main_Program.Resources.resources
+C:\Users\Coding\Documents\Code\School\CSProject\Main_Program\Main_Program\obj\Debug\Main_Program.vbproj.GenerateResource.cache
+C:\Users\Coding\Documents\Code\School\CSProject\Main_Program\Main_Program\obj\Debug\Main_Program.exe
+C:\Users\Coding\Documents\Code\School\CSProject\Main_Program\Main_Program\obj\Debug\Main_Program.xml
+C:\Users\Coding\Documents\Code\School\CSProject\Main_Program\Main_Program\obj\Debug\Main_Program.pdb
