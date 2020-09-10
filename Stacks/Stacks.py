@@ -1,5 +1,4 @@
 import numpy as np
-import sys
 
 print("Choose one of the following options:")
 print("1) Initialise Stack")
