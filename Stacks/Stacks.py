@@ -1,4 +1,5 @@
 import numpy as np
+import sys
 
 print("Choose one of the following options:")
 print("1) Initialise Stack")
@@ -17,7 +18,7 @@ elif choice == 3:
 elif choice == 4:
     print("you choose 4")
 elif choice == 5:
-    print("you chose 5")
+    quit()
 else:
     print("Please choose an item from the menu above")
 
