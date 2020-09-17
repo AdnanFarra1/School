@@ -1,10 +1,23 @@
 import numpy as np
 
+#def Initisialise_Stack():
+#    BaseOfStack = 0
+#    TopOfStack = -1
+#    SizeOfStack = 0
+#    stack = np.full((4,1),"A")
+#    print(stack)
+#    print("Stack Initialised")
 def Initisialise_Stack():
-    BaseOfStack = 0
-    TopOfStack = -1
-    stack = np.full((4,1),"A")
-    print(stack)
+    stack = ["-", "-"]
+    
+    for x in range(len(stack)): 
+        stack.append("-")
+        print (stack[x])
+        
+        
+    
+
+    #print(stack)
     print("Stack Initialised")
 
 
