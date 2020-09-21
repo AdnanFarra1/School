@@ -1,24 +1,14 @@
 import numpy as np
 
-#def Initisialise_Stack():
-#    BaseOfStack = 0
-#    TopOfStack = -1
-#    SizeOfStack = 0
-#    stack = np.full((4,1),"A")
-#    print(stack)
-#    print("Stack Initialised")
 def Initisialise_Stack():
-    stack = ["-", "-"]
-    
-    for x in range(len(stack)): 
-        stack.append("-")
-        print (stack[x])
+    BaseOfStack = 0
+    TopOfStack = -1
+    SizeOfStack = 0
+    stack = ["--"]*5
+    for i in stack:
+        print(i)
         
-        
-    
-
-    #print(stack)
-    print("Stack Initialised")
+    print("\nStack Initialised")
 
 
 print("Choose one of the following options:")
