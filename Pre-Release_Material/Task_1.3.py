@@ -1,4 +1,5 @@
 i = 0
+Size = 6
 ItemDescription = ["Cornflakes", "Milk", "Coffee", "USB", "Stapler", "Calculator"]
 ItemCode= [1488, 5878, 4973, 3967, 2758, 6893]
 Item_Price = ["$7", "$3", "$4", "$10", "$5", "$20"]
@@ -6,7 +7,7 @@ NumberInStock = [27, 94, 120, 12, 7, 3]
 search_value = input("Please input a search value ")
 isFound = False
 
-while i<len(ItemDescription) and isFound == False:
+while i<Size and isFound == False:
     if ItemDescription[i] == search_value:
         print("The Index of search value:", i)
         print("The Item Code is:", ItemCode[i])
