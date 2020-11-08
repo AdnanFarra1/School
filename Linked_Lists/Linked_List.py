@@ -1,17 +1,15 @@
-class LinkedList:
-    def __init__(self):
-        self.head = None
-    def __repr__(self):
-        node = self.head
-        nodes = []
-        while node is not None:
-            nodes.append(node.data)
-            node = node.next
-        nodes.append("None")
-        return " -> ".join(nodes)
+#Constants
+NullPointer = 0
+#Arrays
+Nodes_Array = []
 class Node:
-    def __init__(self,data):
+    def __init__(self, data, pointer):
         self.data = data
-        self.next = None
-    def __repr__(self):
-        return self.data
+        self.pointer = pointer
+
+def InitialiseList():
+    StartPointer = NullPointer
+    FreeListPointer = 1
+    for i in range(1,7):
+        Nodes_Array[i].pointer = i + 1
+    Nodes_Array[7].pointer = NullPointer
