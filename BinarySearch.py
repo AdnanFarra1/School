@@ -14,6 +14,6 @@ def binary_search(sequence, item):
     return None
 
 sequence_a = [1,5,6,3,7,88,33,55,66,]
-item_a = 33
+item_a = 66
 
 print(binary_search(sequence_a, item_a))

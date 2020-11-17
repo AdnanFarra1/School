@@ -1,15 +1,22 @@
-#Constants
-NullPointer = 0
-#Arrays
-Nodes_Array = []
 class Node:
-    def __init__(self, data, pointer):
+    def __init__(self, data=None):
         self.data = data
-        self.pointer = pointer
+        self.pointer = None
+class linked_list:
+    def __init__(self):
+        self.Head = Node()
+    def append(self, data):
+        new_node = Node(data)
+        current_node = self.Head
+        while current_node.next != None:
+            current_node = current_node.next
+        current_node.next = new_node
+    def length(self):
+        current_node = self.Head
+        total = 0
+        while current_node.next != None:
+            total += 1
+            current_node = current_node.next
+        return total
 
-def InitialiseList():
-    StartPointer = NullPointer
-    FreeListPointer = 1
-    for i in range(1,7):
-        Nodes_Array[i].pointer = i + 1
-    Nodes_Array[7].pointer = NullPointer
+    
