@@ -34,7 +34,7 @@ def BubbleSort(Students):
             if Students[i].Student_Score > Students[i+1].Student_Score:
                 sorted = False
                 #Swaps index values together if i value is greater than i + 1 value
-                Students[i].Student_Score, Students[i+1].Student_Score = Students[i+1].Student_Score, Students[i].Student_Score
+                Students[i], Students[i+1] = Students[i+1], Students[i]
     return Students
 def InsertionSort(Students):
     indexing_length = range(1,len(Students))
