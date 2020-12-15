@@ -36,8 +36,22 @@ def BubbleSort(Students):
                 #Swaps index values together if i value is greater than i + 1 value
                 Students[i].Student_Score, Students[i+1].Student_Score = Students[i+1].Student_Score, Students[i].Student_Score
     return Students
-def InsertionSort():
-    print("Inserty")
+def InsertionSort(Students):
+    indexing_length = range(1,len(Students))
+    for i in indexing_length:
+        value_to_sort = Students[i].Student_Score
+
+        while Students[i-1].Student_Score > value_to_sort and i > 0:
+            Students[i], Students[i-1] = Students[i-1], Students[i]
+            i = i - 1
+    return Students
+
+
+
+
+
+
+
 
 print("1) Enter Student Scores")
 print("2) End the program")
@@ -58,7 +72,11 @@ if choice == 1:
             print("Student Name: ",Students[i].Student_Name)
             print("Student Score: ",Students[i].Student_Score)
     elif choice_2 == 2:
-        InsertionSort()
+        InsertionSort(Students)
+        for i in range(len(Students)):
+            print("Student ID: ",Students[i].Student_ID)
+            print("Student Name: ",Students[i].Student_Name)
+            print("Student Score: ",Students[i].Student_Score)
 elif choice == 2:
     print("Program Ended!")
     SystemExit
