@@ -47,11 +47,16 @@ if choice == 1:
     Score_Entry()
     print("1) Bubble Sort")
     print("2) Insertion Sort")
-    choice_2 = input("Please choose an option from the list above: ")
+    choice_2 = int(input("Please choose an option from the list above: "))
     if choice_2 == 1:
-        print("Called1111")
-        #BubbleSort(Students)
-        #print(Students)
+        BubbleSort(Students)
+        for i in range(len(Students)):
+            print("Student ID: ",Students[i].Student_ID)
+            print("Student Name: ",Students[i].Student_Name)
+            print("Student Score: ",(Students[i].Student_Score))
+
+
+
     elif choice_2 == 2:
         InsertionSort()
 
