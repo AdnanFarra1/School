@@ -1,3 +1,4 @@
+#Functions and classes (Structures or records) and some initializations defined right below
 class Student:
     #User defined data type, in python it is called a class, same as a structure or record
 
@@ -35,9 +36,6 @@ def BubbleSort(Students):
                 #Swaps index values together if i value is greater than i + 1 value
                 Students[i].Student_Score, Students[i+1].Student_Score = Students[i+1].Student_Score, Students[i].Student_Score
     return Students
-
-
-
 def InsertionSort():
     print("Inserty")
 
@@ -61,7 +59,6 @@ if choice == 1:
             print("Student Score: ",Students[i].Student_Score)
     elif choice_2 == 2:
         InsertionSort()
-
 elif choice == 2:
     print("Program Ended!")
     SystemExit
