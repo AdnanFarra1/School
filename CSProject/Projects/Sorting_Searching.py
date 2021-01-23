@@ -10,7 +10,7 @@ class Student:
     @classmethod
     def from_input(cls):
         return cls(
-            int(input("Please input Student ID: ")),
+            input("Please input Student ID: "),
             input("Please input Student Name: "),
             float(input("Please input Student Score: ")),
         )
@@ -47,6 +47,18 @@ def InsertionSort(Students):
     return Students
 
 
+position = -1
+def Linear_Search(Students, Search_Value):
+    i = 0
+    while i < len(Students):
+        if Students[i] == Search_Value:
+            globals() ["position"] = i
+            print("Func Called")
+            return True
+        i += 1
+    return False
+
+
 
 
 
@@ -71,12 +83,27 @@ if choice == 1:
             print("Student ID: ",Students[i].Student_ID)
             print("Student Name: ",Students[i].Student_Name)
             print("Student Score: ",Students[i].Student_Score)
+        print("1) Linear Search")
+        print("2) Binary Search")
+        choice_3 = int(input("Please choose an option from the list above: "))
+        if choice_3 == 1:
+            Search_Value = input("Please enter a Student ID to search for: ")
+            Linear_Search(Students, Search_Value)
+
     elif choice_2 == 2:
         InsertionSort(Students)
         for i in range(len(Students)):
             print("Student ID: ",Students[i].Student_ID)
             print("Student Name: ",Students[i].Student_Name)
             print("Student Score: ",Students[i].Student_Score)
+        print("1) Linear Search")
+        print("2) Binary Search")
+        choice_3 = int(input("Please choose an option from the list above: "))
+        if choice_3 == 1:
+            Search_Value = input("Please enter a Student ID to search for: ")
+            Linear_Search(Students, Search_Value)
+
+
 elif choice == 2:
     print("Program Ended!")
     SystemExit
